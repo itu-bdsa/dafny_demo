@@ -37,7 +37,7 @@ Create a file with the forbidden modules in `App/BannedSymbols.txt`
 ```
 T:AbsLib.__default;Call Dafny code only through the Api module
 ```
-Finally, configure the banned API package to read these symbols, and regard their use as error that end build accesses
+Finally, configure the banned API package to read these symbols, and regard their use as error that end build accesses. Create `App/Directory.Build.props` with this content.
 ```
 <Project>
   <ItemGroup>
