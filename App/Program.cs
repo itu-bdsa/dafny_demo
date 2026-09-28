@@ -1,7 +1,6 @@
 ﻿using System.Numerics;
+using Native;
 
-BigInteger y = Api.__default.AbsNatChecked(5);
-Console.WriteLine(y);                       // 5
-
-try { Api.__default.AbsNatChecked(-1); }
-catch (Exception e) { Console.WriteLine($"Rejected: {e.Message}"); }
+var box = new Box(-4);
+Console.WriteLine(AbsBox.__default.AbsField(box));    // 4
+Console.WriteLine(AbsBox.__default.AbsGetter(box));   // 4
